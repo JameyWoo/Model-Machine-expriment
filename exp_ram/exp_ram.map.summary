@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Mar 14 13:09:47 2019
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : exp_ram
+Top-level Entity Name : exp_ram
+Family : Cyclone II
+Total logic elements : 2
+    Total combinational functions : 2
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 20
+Total virtual pins : 0
+Total memory bits : 2,040
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,297 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+11
+910
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+tube
+# storage
+db|tube.(0).cnf
+db|tube.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+tube.vhd
+98cf9751194aa34191f7ed1ecf47476
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+c:|altera|90sp1|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+74185
+# storage
+db|tube.(2).cnf
+db|tube.(2).cnf
+# case_insensitive
+# source_file
+c:|altera|90sp1|quartus|libraries|others|maxplus2|74185.bdf
+4ce9bced35b34649460f16ed5d7a51b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74185:inst4
+74185:inst
+74185:inst3
+}
+# macro_sequence
+
+# end
+# entity
+7449
+# storage
+db|tube.(3).cnf
+db|tube.(3).cnf
+# case_insensitive
+# source_file
+c:|altera|90sp1|quartus|libraries|others|maxplus2|7449.bdf
+55dfeea5905bd9dd1223330961b255
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|tube.(5).cnf
+db|tube.(5).cnf
+# case_insensitive
+# source_file
+c:|altera|90sp1|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QB
+-1
+3
+QA
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+ENT
+-1
+2
+ENP
+-1
+2
+}
+# include_file {
+c:|altera|90sp1|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+74161:inst26
+}
+# macro_sequence
+
+# end
+# entity
+f74161
+# storage
+db|tube.(6).cnf
+db|tube.(6).cnf
+# case_insensitive
+# source_file
+c:|altera|90sp1|quartus|libraries|others|maxplus2|f74161.bdf
+408d3815988dee8ef0f04d17774959
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74161:inst26|f74161:sub
+}
+# macro_sequence
+
+# end
+# entity
+Select1
+# storage
+db|tube.(4).cnf
+db|tube.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+Select1.vhd
+41947574c1f44dd3c959175c6f1e528
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Select1:inst2
+}
+# lmf
+c:|altera|90sp1|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+7448
+# storage
+db|tube.(7).cnf
+db|tube.(7).cnf
+# case_insensitive
+# source_file
+c:|altera|90sp1|quartus|libraries|others|maxplus2|7448.bdf
+f5bb13612191e09b6b732b76917e3be
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+74246
+# storage
+db|tube.(8).cnf
+db|tube.(8).cnf
+# case_insensitive
+# source_file
+c:|altera|90sp1|quartus|libraries|others|maxplus2|74246.bdf
+f1d114ca4b53e415577857e9552785d6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+7447
+# storage
+db|tube.(9).cnf
+db|tube.(9).cnf
+# case_insensitive
+# source_file
+c:|altera|90sp1|quartus|libraries|others|maxplus2|7447.bdf
+b866247e9e4e23608138281b57c7e83
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+ex7449
+# storage
+db|tube.(10).cnf
+db|tube.(10).cnf
+# case_insensitive
+# source_file
+ex7449.bdf
+dc198b5d94df5fa85469895c10751484
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ex7449:inst21
+}
+# macro_sequence
+
+# end
+# entity
+tube
+# storage
+db|tube.(1).cnf
+db|tube.(1).cnf
+# case_insensitive
+# source_file
+tube.bdf
+3a9bd89eca57cdfd9ef64729c60794b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
