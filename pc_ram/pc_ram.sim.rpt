@@ -1,0 +1,702 @@
+Simulator report for pc_ram
+Sun Mar 17 23:04:25 2019
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 135 nodes    ;
+; Simulation Coverage         ;      30.77 % ;
+; Total Number of Transitions ; 466          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; pc_ram.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++----------------------------------------------------------------------------------------------------+
+; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ALTSYNCRAM ;
++----------------------------------------------------------------------------------------------------+
+Memory report data cannot be output to ASCII.
+Please use Quartus II to view the memory report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      30.77 % ;
+; Total nodes checked                                 ; 135          ;
+; Total output ports checked                          ; 143          ;
+; Total output ports with complete 1/0-value coverage ; 44           ;
+; Total output ports with no 1/0-value coverage       ; 66           ;
+; Total output ports with no 1-value coverage         ; 91           ;
+; Total output ports with no 0-value coverage         ; 74           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                              ;
++------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                            ; Output Port Name                                                                               ; Output Port Type ;
++------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; |pc_ram|clk_cdu                                                                                      ; |pc_ram|clk_cdu                                                                                ; out              ;
+; |pc_ram|we                                                                                           ; |pc_ram|we                                                                                     ; out              ;
+; |pc_ram|rd                                                                                           ; |pc_ram|rd                                                                                     ; out              ;
+; |pc_ram|pcld                                                                                         ; |pc_ram|pcld                                                                                   ; out              ;
+; |pc_ram|pcen                                                                                         ; |pc_ram|pcen                                                                                   ; out              ;
+; |pc_ram|sw_bus                                                                                       ; |pc_ram|sw_bus                                                                                 ; out              ;
+; |pc_ram|pc_bus                                                                                       ; |pc_ram|pc_bus                                                                                 ; out              ;
+; |pc_ram|ldar                                                                                         ; |pc_ram|ldar                                                                                   ; out              ;
+; |pc_ram|inputd[0]                                                                                    ; |pc_ram|inputd[0]                                                                              ; out              ;
+; |pc_ram|sw_pc_ar:inst2|process_1~0                                                                   ; |pc_ram|sw_pc_ar:inst2|process_1~0                                                             ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|process_1~1                                                                   ; |pc_ram|sw_pc_ar:inst2|process_1~1                                                             ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|pc~5                                                                          ; |pc_ram|sw_pc_ar:inst2|pc~5                                                                    ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~6                                                                          ; |pc_ram|sw_pc_ar:inst2|pc~6                                                                    ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~7                                                                          ; |pc_ram|sw_pc_ar:inst2|pc~7                                                                    ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~13                                                                         ; |pc_ram|sw_pc_ar:inst2|pc~13                                                                   ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~14                                                                         ; |pc_ram|sw_pc_ar:inst2|pc~14                                                                   ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~15                                                                         ; |pc_ram|sw_pc_ar:inst2|pc~15                                                                   ; out              ;
+; |pc_ram|sw_pc_ar:inst2|ar[0]                                                                         ; |pc_ram|sw_pc_ar:inst2|ar[0]                                                                   ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|pc[1]                                                                         ; |pc_ram|sw_pc_ar:inst2|pc[1]                                                                   ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg~0                                                                     ; |pc_ram|sw_pc_ar:inst2|bus_reg~0                                                               ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg~7                                                                     ; |pc_ram|sw_pc_ar:inst2|bus_reg~7                                                               ; out              ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg~8                                                                     ; |pc_ram|sw_pc_ar:inst2|bus_reg~8                                                               ; out              ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg~9                                                                     ; |pc_ram|sw_pc_ar:inst2|bus_reg~9                                                               ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg[1]                                                                    ; |pc_ram|sw_pc_ar:inst2|bus_reg[1]                                                              ; out              ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg[0]                                                                    ; |pc_ram|sw_pc_ar:inst2|bus_reg[0]                                                              ; out              ;
+; |pc_ram|sw_pc_ar:inst2|d~16                                                                          ; |pc_ram|sw_pc_ar:inst2|d~16                                                                    ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|pc[0]                                                                         ; |pc_ram|sw_pc_ar:inst2|pc[0]                                                                   ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|d[0]~0                                                                        ; |pc_ram|sw_pc_ar:inst2|d[0]~0                                                                  ; out              ;
+; |pc_ram|sw_pc_ar:inst2|d[1]~1                                                                        ; |pc_ram|sw_pc_ar:inst2|d[1]~1                                                                  ; out              ;
+; |pc_ram|lpm_ram_io:inst|_~1                                                                          ; |pc_ram|lpm_ram_io:inst|_~1                                                                    ; out0             ;
+; |pc_ram|lpm_ram_io:inst|_~2                                                                          ; |pc_ram|lpm_ram_io:inst|_~2                                                                    ; out0             ;
+; |pc_ram|lpm_ram_io:inst|datatri[7]~0                                                                 ; |pc_ram|lpm_ram_io:inst|datatri[7]~0                                                           ; out0             ;
+; |pc_ram|lpm_ram_io:inst|datatri[5]                                                                   ; |pc_ram|lpm_ram_io:inst|datatri[5]                                                             ; out              ;
+; |pc_ram|lpm_ram_io:inst|datatri[4]                                                                   ; |pc_ram|lpm_ram_io:inst|datatri[4]                                                             ; out              ;
+; |pc_ram|lpm_ram_io:inst|datatri[3]                                                                   ; |pc_ram|lpm_ram_io:inst|datatri[3]                                                             ; out              ;
+; |pc_ram|lpm_ram_io:inst|datatri[2]                                                                   ; |pc_ram|lpm_ram_io:inst|datatri[2]                                                             ; out              ;
+; |pc_ram|lpm_ram_io:inst|datatri[1]                                                                   ; |pc_ram|lpm_ram_io:inst|datatri[1]                                                             ; out              ;
+; |pc_ram|lpm_ram_io:inst|datatri[0]                                                                   ; |pc_ram|lpm_ram_io:inst|datatri[0]                                                             ; out              ;
+; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a0 ; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[0] ; portadataout0    ;
+; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a4 ; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[4] ; portadataout0    ;
+; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a5 ; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[5] ; portadataout0    ;
+; |pc_ram|sw_pc_ar:inst2|Add0~0                                                                        ; |pc_ram|sw_pc_ar:inst2|Add0~0                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~1                                                                        ; |pc_ram|sw_pc_ar:inst2|Add0~1                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~2                                                                        ; |pc_ram|sw_pc_ar:inst2|Add0~2                                                                  ; out0             ;
++------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                 ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |pc_ram|d[7]                      ; |pc_ram|d[7]                      ; out              ;
+; |pc_ram|d[7]                      ; |pc_ram|d[7]~result               ; pin_out          ;
+; |pc_ram|d[6]                      ; |pc_ram|d[6]                      ; out              ;
+; |pc_ram|d[6]                      ; |pc_ram|d[6]~result               ; pin_out          ;
+; |pc_ram|d[5]                      ; |pc_ram|d[5]                      ; out              ;
+; |pc_ram|d[5]                      ; |pc_ram|d[5]~result               ; pin_out          ;
+; |pc_ram|d[4]                      ; |pc_ram|d[4]                      ; out              ;
+; |pc_ram|d[4]                      ; |pc_ram|d[4]~result               ; pin_out          ;
+; |pc_ram|d[3]                      ; |pc_ram|d[3]                      ; out              ;
+; |pc_ram|d[3]                      ; |pc_ram|d[3]~result               ; pin_out          ;
+; |pc_ram|d[2]                      ; |pc_ram|d[2]                      ; out              ;
+; |pc_ram|d[2]                      ; |pc_ram|d[2]~result               ; pin_out          ;
+; |pc_ram|d[1]                      ; |pc_ram|d[1]                      ; out              ;
+; |pc_ram|d[1]                      ; |pc_ram|d[1]~result               ; pin_out          ;
+; |pc_ram|d[0]                      ; |pc_ram|d[0]                      ; out              ;
+; |pc_ram|d[0]                      ; |pc_ram|d[0]~result               ; pin_out          ;
+; |pc_ram|d~0                       ; |pc_ram|d~0                       ; out0             ;
+; |pc_ram|d~1                       ; |pc_ram|d~1                       ; out0             ;
+; |pc_ram|d~2                       ; |pc_ram|d~2                       ; out0             ;
+; |pc_ram|d~3                       ; |pc_ram|d~3                       ; out0             ;
+; |pc_ram|d~4                       ; |pc_ram|d~4                       ; out0             ;
+; |pc_ram|d~5                       ; |pc_ram|d~5                       ; out0             ;
+; |pc_ram|d~6                       ; |pc_ram|d~6                       ; out0             ;
+; |pc_ram|d~7                       ; |pc_ram|d~7                       ; out0             ;
+; |pc_ram|memenab                   ; |pc_ram|memenab                   ; out              ;
+; |pc_ram|pcclr                     ; |pc_ram|pcclr                     ; out              ;
+; |pc_ram|inputd[7]                 ; |pc_ram|inputd[7]                 ; out              ;
+; |pc_ram|inputd[6]                 ; |pc_ram|inputd[6]                 ; out              ;
+; |pc_ram|inputd[5]                 ; |pc_ram|inputd[5]                 ; out              ;
+; |pc_ram|inputd[4]                 ; |pc_ram|inputd[4]                 ; out              ;
+; |pc_ram|inputd[3]                 ; |pc_ram|inputd[3]                 ; out              ;
+; |pc_ram|inputd[2]                 ; |pc_ram|inputd[2]                 ; out              ;
+; |pc_ram|inputd[1]                 ; |pc_ram|inputd[1]                 ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~0       ; |pc_ram|sw_pc_ar:inst2|pc~0       ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~1       ; |pc_ram|sw_pc_ar:inst2|pc~1       ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~2       ; |pc_ram|sw_pc_ar:inst2|pc~2       ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~3       ; |pc_ram|sw_pc_ar:inst2|pc~3       ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~4       ; |pc_ram|sw_pc_ar:inst2|pc~4       ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~8       ; |pc_ram|sw_pc_ar:inst2|pc~8       ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~9       ; |pc_ram|sw_pc_ar:inst2|pc~9       ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~10      ; |pc_ram|sw_pc_ar:inst2|pc~10      ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~11      ; |pc_ram|sw_pc_ar:inst2|pc~11      ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~12      ; |pc_ram|sw_pc_ar:inst2|pc~12      ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc[7]      ; |pc_ram|sw_pc_ar:inst2|pc[7]      ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|pc[6]      ; |pc_ram|sw_pc_ar:inst2|pc[6]      ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|pc[5]      ; |pc_ram|sw_pc_ar:inst2|pc[5]      ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|pc[4]      ; |pc_ram|sw_pc_ar:inst2|pc[4]      ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|pc[3]      ; |pc_ram|sw_pc_ar:inst2|pc[3]      ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|pc[2]      ; |pc_ram|sw_pc_ar:inst2|pc[2]      ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg~1  ; |pc_ram|sw_pc_ar:inst2|bus_reg~1  ; out              ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg~2  ; |pc_ram|sw_pc_ar:inst2|bus_reg~2  ; out              ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg~3  ; |pc_ram|sw_pc_ar:inst2|bus_reg~3  ; out              ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg~4  ; |pc_ram|sw_pc_ar:inst2|bus_reg~4  ; out              ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg~5  ; |pc_ram|sw_pc_ar:inst2|bus_reg~5  ; out              ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg~6  ; |pc_ram|sw_pc_ar:inst2|bus_reg~6  ; out              ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg[7] ; |pc_ram|sw_pc_ar:inst2|bus_reg[7] ; out              ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg[6] ; |pc_ram|sw_pc_ar:inst2|bus_reg[6] ; out              ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg[5] ; |pc_ram|sw_pc_ar:inst2|bus_reg[5] ; out              ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg[4] ; |pc_ram|sw_pc_ar:inst2|bus_reg[4] ; out              ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg[3] ; |pc_ram|sw_pc_ar:inst2|bus_reg[3] ; out              ;
+; |pc_ram|sw_pc_ar:inst2|bus_reg[2] ; |pc_ram|sw_pc_ar:inst2|bus_reg[2] ; out              ;
+; |pc_ram|sw_pc_ar:inst2|comb~0     ; |pc_ram|sw_pc_ar:inst2|comb~0     ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|comb~1     ; |pc_ram|sw_pc_ar:inst2|comb~1     ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|comb~2     ; |pc_ram|sw_pc_ar:inst2|comb~2     ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|comb~3     ; |pc_ram|sw_pc_ar:inst2|comb~3     ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|comb~4     ; |pc_ram|sw_pc_ar:inst2|comb~4     ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|comb~5     ; |pc_ram|sw_pc_ar:inst2|comb~5     ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|comb~6     ; |pc_ram|sw_pc_ar:inst2|comb~6     ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|comb~7     ; |pc_ram|sw_pc_ar:inst2|comb~7     ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|d[2]~2     ; |pc_ram|sw_pc_ar:inst2|d[2]~2     ; out              ;
+; |pc_ram|sw_pc_ar:inst2|d[3]~3     ; |pc_ram|sw_pc_ar:inst2|d[3]~3     ; out              ;
+; |pc_ram|sw_pc_ar:inst2|d[4]~4     ; |pc_ram|sw_pc_ar:inst2|d[4]~4     ; out              ;
+; |pc_ram|sw_pc_ar:inst2|d[5]~5     ; |pc_ram|sw_pc_ar:inst2|d[5]~5     ; out              ;
+; |pc_ram|sw_pc_ar:inst2|d[6]~6     ; |pc_ram|sw_pc_ar:inst2|d[6]~6     ; out              ;
+; |pc_ram|sw_pc_ar:inst2|d[7]~7     ; |pc_ram|sw_pc_ar:inst2|d[7]~7     ; out              ;
+; |pc_ram|sw_pc_ar:inst2|ar[2]      ; |pc_ram|sw_pc_ar:inst2|ar[2]      ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|ar[3]      ; |pc_ram|sw_pc_ar:inst2|ar[3]      ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|ar[4]      ; |pc_ram|sw_pc_ar:inst2|ar[4]      ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|ar[5]      ; |pc_ram|sw_pc_ar:inst2|ar[5]      ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|ar[6]      ; |pc_ram|sw_pc_ar:inst2|ar[6]      ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|ar[7]      ; |pc_ram|sw_pc_ar:inst2|ar[7]      ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|Add0~3     ; |pc_ram|sw_pc_ar:inst2|Add0~3     ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~4     ; |pc_ram|sw_pc_ar:inst2|Add0~4     ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~5     ; |pc_ram|sw_pc_ar:inst2|Add0~5     ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~6     ; |pc_ram|sw_pc_ar:inst2|Add0~6     ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~7     ; |pc_ram|sw_pc_ar:inst2|Add0~7     ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~8     ; |pc_ram|sw_pc_ar:inst2|Add0~8     ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~9     ; |pc_ram|sw_pc_ar:inst2|Add0~9     ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~10    ; |pc_ram|sw_pc_ar:inst2|Add0~10    ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~11    ; |pc_ram|sw_pc_ar:inst2|Add0~11    ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~12    ; |pc_ram|sw_pc_ar:inst2|Add0~12    ; out0             ;
++-----------------------------------+-----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                 ;
++------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                            ; Output Port Name                                                                               ; Output Port Type ;
++------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+; |pc_ram|d[7]                                                                                         ; |pc_ram|d[7]                                                                                   ; out              ;
+; |pc_ram|d[7]                                                                                         ; |pc_ram|d[7]~result                                                                            ; pin_out          ;
+; |pc_ram|d[6]                                                                                         ; |pc_ram|d[6]                                                                                   ; out              ;
+; |pc_ram|d[6]                                                                                         ; |pc_ram|d[6]~result                                                                            ; pin_out          ;
+; |pc_ram|d[5]                                                                                         ; |pc_ram|d[5]                                                                                   ; out              ;
+; |pc_ram|d[5]                                                                                         ; |pc_ram|d[5]~result                                                                            ; pin_out          ;
+; |pc_ram|d[4]                                                                                         ; |pc_ram|d[4]                                                                                   ; out              ;
+; |pc_ram|d[4]                                                                                         ; |pc_ram|d[4]~result                                                                            ; pin_out          ;
+; |pc_ram|d[3]                                                                                         ; |pc_ram|d[3]                                                                                   ; out              ;
+; |pc_ram|d[3]                                                                                         ; |pc_ram|d[3]~result                                                                            ; pin_out          ;
+; |pc_ram|d[2]                                                                                         ; |pc_ram|d[2]                                                                                   ; out              ;
+; |pc_ram|d[2]                                                                                         ; |pc_ram|d[2]~result                                                                            ; pin_out          ;
+; |pc_ram|d[1]                                                                                         ; |pc_ram|d[1]                                                                                   ; out              ;
+; |pc_ram|d[1]                                                                                         ; |pc_ram|d[1]~result                                                                            ; pin_out          ;
+; |pc_ram|d[0]                                                                                         ; |pc_ram|d[0]                                                                                   ; out              ;
+; |pc_ram|d[0]                                                                                         ; |pc_ram|d[0]~result                                                                            ; pin_out          ;
+; |pc_ram|d~0                                                                                          ; |pc_ram|d~0                                                                                    ; out0             ;
+; |pc_ram|d~1                                                                                          ; |pc_ram|d~1                                                                                    ; out0             ;
+; |pc_ram|d~2                                                                                          ; |pc_ram|d~2                                                                                    ; out0             ;
+; |pc_ram|d~3                                                                                          ; |pc_ram|d~3                                                                                    ; out0             ;
+; |pc_ram|d~4                                                                                          ; |pc_ram|d~4                                                                                    ; out0             ;
+; |pc_ram|d~5                                                                                          ; |pc_ram|d~5                                                                                    ; out0             ;
+; |pc_ram|d~6                                                                                          ; |pc_ram|d~6                                                                                    ; out0             ;
+; |pc_ram|d~7                                                                                          ; |pc_ram|d~7                                                                                    ; out0             ;
+; |pc_ram|inputd[7]                                                                                    ; |pc_ram|inputd[7]                                                                              ; out              ;
+; |pc_ram|inputd[6]                                                                                    ; |pc_ram|inputd[6]                                                                              ; out              ;
+; |pc_ram|inputd[5]                                                                                    ; |pc_ram|inputd[5]                                                                              ; out              ;
+; |pc_ram|inputd[4]                                                                                    ; |pc_ram|inputd[4]                                                                              ; out              ;
+; |pc_ram|inputd[3]                                                                                    ; |pc_ram|inputd[3]                                                                              ; out              ;
+; |pc_ram|inputd[2]                                                                                    ; |pc_ram|inputd[2]                                                                              ; out              ;
+; |pc_ram|inputd[1]                                                                                    ; |pc_ram|inputd[1]                                                                              ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~0                                                                          ; |pc_ram|sw_pc_ar:inst2|pc~0                                                                    ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~1                                                                          ; |pc_ram|sw_pc_ar:inst2|pc~1                                                                    ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~2                                                                          ; |pc_ram|sw_pc_ar:inst2|pc~2                                                                    ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~3                                                                          ; |pc_ram|sw_pc_ar:inst2|pc~3                                                                    ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc~4                                                                          ; |pc_ram|sw_pc_ar:inst2|pc~4                                                                    ; out              ;
+; |pc_ram|sw_pc_ar:inst2|pc[7]                                                                         ; |pc_ram|sw_pc_ar:inst2|pc[7]                                                                   ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|pc[6]                                                                         ; |pc_ram|sw_pc_ar:inst2|pc[6]                                                                   ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|pc[5]                                                                         ; |pc_ram|sw_pc_ar:inst2|pc[5]                                                                   ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|pc[4]                                                                         ; |pc_ram|sw_pc_ar:inst2|pc[4]                                                                   ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|pc[3]                                                                         ; |pc_ram|sw_pc_ar:inst2|pc[3]                                                                   ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|pc[2]                                                                         ; |pc_ram|sw_pc_ar:inst2|pc[2]                                                                   ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|comb~0                                                                        ; |pc_ram|sw_pc_ar:inst2|comb~0                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|comb~1                                                                        ; |pc_ram|sw_pc_ar:inst2|comb~1                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|comb~2                                                                        ; |pc_ram|sw_pc_ar:inst2|comb~2                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|comb~3                                                                        ; |pc_ram|sw_pc_ar:inst2|comb~3                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|comb~4                                                                        ; |pc_ram|sw_pc_ar:inst2|comb~4                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|comb~5                                                                        ; |pc_ram|sw_pc_ar:inst2|comb~5                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|comb~6                                                                        ; |pc_ram|sw_pc_ar:inst2|comb~6                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|comb~7                                                                        ; |pc_ram|sw_pc_ar:inst2|comb~7                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|ar[1]                                                                         ; |pc_ram|sw_pc_ar:inst2|ar[1]                                                                   ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|ar[2]                                                                         ; |pc_ram|sw_pc_ar:inst2|ar[2]                                                                   ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|ar[3]                                                                         ; |pc_ram|sw_pc_ar:inst2|ar[3]                                                                   ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|ar[4]                                                                         ; |pc_ram|sw_pc_ar:inst2|ar[4]                                                                   ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|ar[5]                                                                         ; |pc_ram|sw_pc_ar:inst2|ar[5]                                                                   ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|ar[6]                                                                         ; |pc_ram|sw_pc_ar:inst2|ar[6]                                                                   ; regout           ;
+; |pc_ram|sw_pc_ar:inst2|ar[7]                                                                         ; |pc_ram|sw_pc_ar:inst2|ar[7]                                                                   ; regout           ;
+; |pc_ram|lpm_ram_io:inst|datatri[7]                                                                   ; |pc_ram|lpm_ram_io:inst|datatri[7]                                                             ; out              ;
+; |pc_ram|lpm_ram_io:inst|datatri[6]                                                                   ; |pc_ram|lpm_ram_io:inst|datatri[6]                                                             ; out              ;
+; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a1 ; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[1] ; portadataout0    ;
+; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a2 ; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[2] ; portadataout0    ;
+; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a3 ; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[3] ; portadataout0    ;
+; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a6 ; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[6] ; portadataout0    ;
+; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a7 ; |pc_ram|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[7] ; portadataout0    ;
+; |pc_ram|sw_pc_ar:inst2|Add0~3                                                                        ; |pc_ram|sw_pc_ar:inst2|Add0~3                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~4                                                                        ; |pc_ram|sw_pc_ar:inst2|Add0~4                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~5                                                                        ; |pc_ram|sw_pc_ar:inst2|Add0~5                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~6                                                                        ; |pc_ram|sw_pc_ar:inst2|Add0~6                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~7                                                                        ; |pc_ram|sw_pc_ar:inst2|Add0~7                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~8                                                                        ; |pc_ram|sw_pc_ar:inst2|Add0~8                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~9                                                                        ; |pc_ram|sw_pc_ar:inst2|Add0~9                                                                  ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~10                                                                       ; |pc_ram|sw_pc_ar:inst2|Add0~10                                                                 ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~11                                                                       ; |pc_ram|sw_pc_ar:inst2|Add0~11                                                                 ; out0             ;
+; |pc_ram|sw_pc_ar:inst2|Add0~12                                                                       ; |pc_ram|sw_pc_ar:inst2|Add0~12                                                                 ; out0             ;
++------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Mar 17 23:04:25 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off pc_ram -c pc_ram
+Info: Using vector source file "D:/My-Quartus/Model Machine/pc_ram/pc_ram.vwf"
+Warning: Wrong node type for node "d[7]" in vector source file. Design node is of type Input, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "d[6]" in vector source file. Design node is of type Input, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "d[5]" in vector source file. Design node is of type Input, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "d[4]" in vector source file. Design node is of type Input, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "d[3]" in vector source file. Design node is of type Input, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "d[2]" in vector source file. Design node is of type Input, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "d[1]" in vector source file. Design node is of type Input, but signal in vector source file is of type Output.
+Warning: Wrong node type for node "d[0]" in vector source file. Design node is of type Input, but signal in vector source file is of type Output.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found logic contention at time 20.0 ns on bus node "|pc_ram|d~0"
+    Info: Node "d[7]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[7]~7" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[7]" has logic level of Z
+Warning: Found logic contention at time 20.0 ns on bus node "|pc_ram|d~1"
+    Info: Node "d[6]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[6]~6" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[6]" has logic level of Z
+Warning: Found logic contention at time 20.0 ns on bus node "|pc_ram|d~2"
+    Info: Node "d[5]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[5]~5" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[5]" has logic level of Z
+Warning: Found logic contention at time 20.0 ns on bus node "|pc_ram|d~3"
+    Info: Node "d[4]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[4]~4" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[4]" has logic level of Z
+Warning: Found logic contention at time 20.0 ns on bus node "|pc_ram|d~4"
+    Info: Node "d[3]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[3]~3" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[3]" has logic level of Z
+Warning: Found logic contention at time 20.0 ns on bus node "|pc_ram|d~5"
+    Info: Node "d[2]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[2]~2" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[2]" has logic level of Z
+Warning: Found logic contention at time 20.0 ns on bus node "|pc_ram|d~6"
+    Info: Node "d[1]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[1]~1" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[1]" has logic level of Z
+Warning: Found logic contention at time 20.0 ns on bus node "|pc_ram|d~7"
+    Info: Node "d[0]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[0]~0" has logic level of 1
+    Info: Node "lpm_ram_io:inst|datatri[0]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~0"
+    Info: Node "d[7]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[7]~7" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[7]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~1"
+    Info: Node "d[6]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[6]~6" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[6]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~2"
+    Info: Node "d[5]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[5]~5" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[5]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~3"
+    Info: Node "d[4]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[4]~4" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[4]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~4"
+    Info: Node "d[3]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[3]~3" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[3]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~5"
+    Info: Node "d[2]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[2]~2" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[2]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~6"
+    Info: Node "d[1]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[1]~1" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[1]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~7"
+    Info: Node "d[0]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[0]~0" has logic level of 1
+    Info: Node "lpm_ram_io:inst|datatri[0]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~0"
+    Info: Node "d[7]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[7]~7" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[7]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~1"
+    Info: Node "d[6]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[6]~6" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[6]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~2"
+    Info: Node "d[5]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[5]~5" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[5]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~3"
+    Info: Node "d[4]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[4]~4" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[4]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~4"
+    Info: Node "d[3]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[3]~3" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[3]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~5"
+    Info: Node "d[2]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[2]~2" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[2]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~6"
+    Info: Node "d[1]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[1]~1" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[1]" has logic level of Z
+Warning: Found logic contention at time 60.0 ns on bus node "|pc_ram|d~7"
+    Info: Node "d[0]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[0]~0" has logic level of 1
+    Info: Node "lpm_ram_io:inst|datatri[0]" has logic level of Z
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~0"
+    Info: Node "d[7]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[7]~7" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[7]" has logic level of 1
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~1"
+    Info: Node "d[6]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[6]~6" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[6]" has logic level of 1
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~2"
+    Info: Node "d[5]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[5]~5" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[5]" has logic level of 1
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~3"
+    Info: Node "d[4]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[4]~4" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[4]" has logic level of 0
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~4"
+    Info: Node "d[3]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[3]~3" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[3]" has logic level of 0
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~5"
+    Info: Node "d[2]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[2]~2" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[2]" has logic level of 0
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~6"
+    Info: Node "d[1]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[1]~1" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[1]" has logic level of 0
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~7"
+    Info: Node "d[0]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[0]~0" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[0]" has logic level of 1
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~7"
+    Info: Node "d[0]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[0]~0" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[0]" has logic level of 1
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~6"
+    Info: Node "d[1]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[1]~1" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[1]" has logic level of 0
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~5"
+    Info: Node "d[2]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[2]~2" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[2]" has logic level of 0
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~4"
+    Info: Node "d[3]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[3]~3" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[3]" has logic level of 0
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~3"
+    Info: Node "d[4]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[4]~4" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[4]" has logic level of 0
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~2"
+    Info: Node "d[5]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[5]~5" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[5]" has logic level of 1
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~1"
+    Info: Node "d[6]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[6]~6" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[6]" has logic level of 1
+Warning: Found logic contention at time 80.0 ns on bus node "|pc_ram|d~0"
+    Info: Node "d[7]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[7]~7" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[7]" has logic level of 1
+Warning: Found logic contention at time 90.0 ns on bus node "|pc_ram|d~7"
+    Info: Node "d[0]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[0]~0" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[0]" has logic level of 0
+Warning: Found logic contention at time 90.0 ns on bus node "|pc_ram|d~6"
+    Info: Node "d[1]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[1]~1" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[1]" has logic level of 1
+Warning: Found logic contention at time 90.0 ns on bus node "|pc_ram|d~3"
+    Info: Node "d[4]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[4]~4" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[4]" has logic level of 1
+Warning: Found logic contention at time 90.0 ns on bus node "|pc_ram|d~2"
+    Info: Node "d[5]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[5]~5" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[5]" has logic level of 0
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~0"
+    Info: Node "d[7]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[7]~7" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[7]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~1"
+    Info: Node "d[6]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[6]~6" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[6]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~2"
+    Info: Node "d[5]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[5]~5" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[5]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~3"
+    Info: Node "d[4]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[4]~4" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[4]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~4"
+    Info: Node "d[3]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[3]~3" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[3]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~5"
+    Info: Node "d[2]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[2]~2" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[2]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~6"
+    Info: Node "d[1]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[1]~1" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[1]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~7"
+    Info: Node "d[0]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[0]~0" has logic level of 1
+    Info: Node "lpm_ram_io:inst|datatri[0]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~7"
+    Info: Node "d[0]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[0]~0" has logic level of 1
+    Info: Node "lpm_ram_io:inst|datatri[0]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~6"
+    Info: Node "d[1]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[1]~1" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[1]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~5"
+    Info: Node "d[2]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[2]~2" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[2]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~4"
+    Info: Node "d[3]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[3]~3" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[3]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~3"
+    Info: Node "d[4]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[4]~4" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[4]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~2"
+    Info: Node "d[5]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[5]~5" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[5]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~1"
+    Info: Node "d[6]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[6]~6" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[6]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~0"
+    Info: Node "d[7]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[7]~7" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[7]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~0"
+    Info: Node "d[7]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[7]~7" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[7]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~1"
+    Info: Node "d[6]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[6]~6" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[6]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~2"
+    Info: Node "d[5]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[5]~5" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[5]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~3"
+    Info: Node "d[4]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[4]~4" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[4]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~4"
+    Info: Node "d[3]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[3]~3" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[3]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~5"
+    Info: Node "d[2]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[2]~2" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[2]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~6"
+    Info: Node "d[1]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[1]~1" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[1]" has logic level of Z
+Warning: Found logic contention at time 160.0 ns on bus node "|pc_ram|d~7"
+    Info: Node "d[0]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[0]~0" has logic level of 1
+    Info: Node "lpm_ram_io:inst|datatri[0]" has logic level of Z
+Warning: Found logic contention at time 170.0 ns on bus node "|pc_ram|d~6"
+    Info: Node "d[1]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[1]~1" has logic level of 1
+    Info: Node "lpm_ram_io:inst|datatri[1]" has logic level of Z
+Warning: Found logic contention at time 170.0 ns on bus node "|pc_ram|d~7"
+    Info: Node "d[0]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[0]~0" has logic level of 0
+    Info: Node "lpm_ram_io:inst|datatri[0]" has logic level of Z
+Warning: Found logic contention at time 190.0 ns on bus node "|pc_ram|d~7"
+    Info: Node "d[0]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[0]~0" has logic level of 1
+    Info: Node "lpm_ram_io:inst|datatri[0]" has logic level of Z
+Warning: Found logic contention at time 210.0 ns on bus node "|pc_ram|d~7"
+    Info: Node "d[0]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[0]~0" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[0]" has logic level of 0
+Warning: Found logic contention at time 210.0 ns on bus node "|pc_ram|d~6"
+    Info: Node "d[1]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[1]~1" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[1]" has logic level of 1
+Warning: Found logic contention at time 210.0 ns on bus node "|pc_ram|d~5"
+    Info: Node "d[2]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[2]~2" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[2]" has logic level of 1
+Warning: Found logic contention at time 210.0 ns on bus node "|pc_ram|d~4"
+    Info: Node "d[3]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[3]~3" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[3]" has logic level of 1
+Warning: Found logic contention at time 210.0 ns on bus node "|pc_ram|d~3"
+    Info: Node "d[4]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[4]~4" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[4]" has logic level of 0
+Warning: Found logic contention at time 210.0 ns on bus node "|pc_ram|d~2"
+    Info: Node "d[5]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[5]~5" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[5]" has logic level of 1
+Warning: Found logic contention at time 210.0 ns on bus node "|pc_ram|d~1"
+    Info: Node "d[6]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[6]~6" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[6]" has logic level of 1
+Warning: Found logic contention at time 210.0 ns on bus node "|pc_ram|d~0"
+    Info: Node "d[7]" has logic level of X
+    Info: Node "sw_pc_ar:inst2|d[7]~7" has logic level of Z
+    Info: Node "lpm_ram_io:inst|datatri[7]" has logic level of 1
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      30.77 %
+Info: Number of transitions in simulation is 466
+Info: Quartus II Simulator was successful. 0 errors, 87 warnings
+    Info: Peak virtual memory: 162 megabytes
+    Info: Processing ended: Sun Mar 17 23:04:26 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

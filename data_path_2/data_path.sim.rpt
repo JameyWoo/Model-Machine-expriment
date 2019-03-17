@@ -1,0 +1,587 @@
+Simulator report for data_path
+Sun Mar 17 21:30:29 2019
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 314 nodes    ;
+; Simulation Coverage         ;      60.25 % ;
+; Total Number of Transitions ; 1463         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                         ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Option                                                                                     ; Setting       ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Simulation mode                                                                            ; Functional    ; Timing        ;
+; Start time                                                                                 ; 0 ns          ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF          ;               ;
+; Vector input source                                                                        ; data_path.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On            ; On            ;
+; Check outputs                                                                              ; Off           ; Off           ;
+; Report simulation coverage                                                                 ; On            ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On            ; On            ;
+; Display missing 1-value coverage report                                                    ; On            ; On            ;
+; Display missing 0-value coverage report                                                    ; On            ; On            ;
+; Detect setup and hold time violations                                                      ; Off           ; Off           ;
+; Detect glitches                                                                            ; Off           ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off           ; Off           ;
+; Generate Signal Activity File                                                              ; Off           ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off           ; Off           ;
+; Group bus channels in simulation results                                                   ; Off           ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On            ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE    ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off           ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto          ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ALTSYNCRAM ;
++--------------------------------------------------------------------------------------------------------------------+
+Memory report data cannot be output to ASCII.
+Please use Quartus II to view the memory report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      60.25 % ;
+; Total nodes checked                                 ; 314          ;
+; Total output ports checked                          ; 322          ;
+; Total output ports with complete 1/0-value coverage ; 194          ;
+; Total output ports with no 1/0-value coverage       ; 88           ;
+; Total output ports with no 1-value coverage         ; 110          ;
+; Total output ports with no 0-value coverage         ; 106          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                              ;
++----------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                            ; Output Port Name                                                                                               ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; |data_path|d[7]                                                                                                      ; |data_path|d[7]~result                                                                                         ; pin_out          ;
+; |data_path|d[6]                                                                                                      ; |data_path|d[6]~result                                                                                         ; pin_out          ;
+; |data_path|d[5]                                                                                                      ; |data_path|d[5]~result                                                                                         ; pin_out          ;
+; |data_path|d[4]                                                                                                      ; |data_path|d[4]~result                                                                                         ; pin_out          ;
+; |data_path|d[3]                                                                                                      ; |data_path|d[3]~result                                                                                         ; pin_out          ;
+; |data_path|d[2]                                                                                                      ; |data_path|d[2]~result                                                                                         ; pin_out          ;
+; |data_path|d[1]                                                                                                      ; |data_path|d[1]~result                                                                                         ; pin_out          ;
+; |data_path|d[0]                                                                                                      ; |data_path|d[0]~result                                                                                         ; pin_out          ;
+; |data_path|d~0                                                                                                       ; |data_path|d~0                                                                                                 ; out0             ;
+; |data_path|d~1                                                                                                       ; |data_path|d~1                                                                                                 ; out0             ;
+; |data_path|d~2                                                                                                       ; |data_path|d~2                                                                                                 ; out0             ;
+; |data_path|d~3                                                                                                       ; |data_path|d~3                                                                                                 ; out0             ;
+; |data_path|d~4                                                                                                       ; |data_path|d~4                                                                                                 ; out0             ;
+; |data_path|d~5                                                                                                       ; |data_path|d~5                                                                                                 ; out0             ;
+; |data_path|d~6                                                                                                       ; |data_path|d~6                                                                                                 ; out0             ;
+; |data_path|d~7                                                                                                       ; |data_path|d~7                                                                                                 ; out0             ;
+; |data_path|alu_sel[5]                                                                                                ; |data_path|alu_sel[5]                                                                                          ; out              ;
+; |data_path|alu_sel[4]                                                                                                ; |data_path|alu_sel[4]                                                                                          ; out              ;
+; |data_path|alu_sel[3]                                                                                                ; |data_path|alu_sel[3]                                                                                          ; out              ;
+; |data_path|alu_sel[2]                                                                                                ; |data_path|alu_sel[2]                                                                                          ; out              ;
+; |data_path|alu_sel[1]                                                                                                ; |data_path|alu_sel[1]                                                                                          ; out              ;
+; |data_path|alu_sel[0]                                                                                                ; |data_path|alu_sel[0]                                                                                          ; out              ;
+; |data_path|CLK                                                                                                       ; |data_path|CLK                                                                                                 ; out              ;
+; |data_path|bus_sel[4]                                                                                                ; |data_path|bus_sel[4]                                                                                          ; out              ;
+; |data_path|bus_sel[3]                                                                                                ; |data_path|bus_sel[3]                                                                                          ; out              ;
+; |data_path|bus_sel[2]                                                                                                ; |data_path|bus_sel[2]                                                                                          ; out              ;
+; |data_path|bus_sel[1]                                                                                                ; |data_path|bus_sel[1]                                                                                          ; out              ;
+; |data_path|bus_sel[0]                                                                                                ; |data_path|bus_sel[0]                                                                                          ; out              ;
+; |data_path|ld_reg[4]                                                                                                 ; |data_path|ld_reg[4]                                                                                           ; out              ;
+; |data_path|ld_reg[3]                                                                                                 ; |data_path|ld_reg[3]                                                                                           ; out              ;
+; |data_path|ld_reg[2]                                                                                                 ; |data_path|ld_reg[2]                                                                                           ; out              ;
+; |data_path|ld_reg[1]                                                                                                 ; |data_path|ld_reg[1]                                                                                           ; out              ;
+; |data_path|ld_reg[0]                                                                                                 ; |data_path|ld_reg[0]                                                                                           ; out              ;
+; |data_path|k[2]                                                                                                      ; |data_path|k[2]                                                                                                ; out              ;
+; |data_path|k[1]                                                                                                      ; |data_path|k[1]                                                                                                ; out              ;
+; |data_path|k[0]                                                                                                      ; |data_path|k[0]                                                                                                ; out              ;
+; |data_path|pc_sel[1]                                                                                                 ; |data_path|pc_sel[1]                                                                                           ; out              ;
+; |data_path|pc_sel[0]                                                                                                 ; |data_path|pc_sel[0]                                                                                           ; out              ;
+; |data_path|we_rd[1]                                                                                                  ; |data_path|we_rd[1]                                                                                            ; out              ;
+; |data_path|we_rd[0]                                                                                                  ; |data_path|we_rd[0]                                                                                            ; out              ;
+; |data_path|r1[7]                                                                                                     ; |data_path|r1[7]                                                                                               ; pin_out          ;
+; |data_path|r1[6]                                                                                                     ; |data_path|r1[6]                                                                                               ; pin_out          ;
+; |data_path|r1[5]                                                                                                     ; |data_path|r1[5]                                                                                               ; pin_out          ;
+; |data_path|r1[4]                                                                                                     ; |data_path|r1[4]                                                                                               ; pin_out          ;
+; |data_path|r1[2]                                                                                                     ; |data_path|r1[2]                                                                                               ; pin_out          ;
+; |data_path|r1[1]                                                                                                     ; |data_path|r1[1]                                                                                               ; pin_out          ;
+; |data_path|r1[0]                                                                                                     ; |data_path|r1[0]                                                                                               ; pin_out          ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|_~1                                                                          ; |data_path|pc_ram:inst2|lpm_ram_io:inst|_~1                                                                    ; out0             ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[7]                                                                   ; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[7]                                                             ; out              ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[6]                                                                   ; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[6]                                                             ; out              ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[5]                                                                   ; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[5]                                                             ; out              ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[4]                                                                   ; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[4]                                                             ; out              ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[3]                                                                   ; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[3]                                                             ; out              ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[2]                                                                   ; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[2]                                                             ; out              ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[1]                                                                   ; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[1]                                                             ; out              ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[0]                                                                   ; |data_path|pc_ram:inst2|lpm_ram_io:inst|datatri[0]                                                             ; out              ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a0 ; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[0] ; portadataout0    ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a2 ; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[2] ; portadataout0    ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a4 ; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[4] ; portadataout0    ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a5 ; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[5] ; portadataout0    ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a6 ; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[6] ; portadataout0    ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a7 ; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[7] ; portadataout0    ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|process_1~0                                                                   ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|process_1~0                                                             ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|process_1~1                                                                   ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|process_1~1                                                             ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~4                                                                          ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~4                                                                    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~5                                                                          ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~5                                                                    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~6                                                                          ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~6                                                                    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~7                                                                          ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~7                                                                    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~12                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~12                                                                   ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~13                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~13                                                                   ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~14                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~14                                                                   ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~15                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~15                                                                   ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[2]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[2]                                                                   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[1]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[1]                                                                   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~1                                                                     ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~1                                                               ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~2                                                                     ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~2                                                               ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~3                                                                     ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~3                                                               ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~4                                                                     ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~4                                                               ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~5                                                                     ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~5                                                               ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~6                                                                     ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~6                                                               ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~7                                                                     ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~7                                                               ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~8                                                                     ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|bus_reg~8                                                               ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[0]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[0]                                                                   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~0                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~0                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~1                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~1                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~2                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~2                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~3                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~3                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~4                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~4                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~5                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~5                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~6                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~6                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~7                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|comb~7                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[0]~0                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[0]~0                                                                  ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[1]~1                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[1]~1                                                                  ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[2]~2                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[2]~2                                                                  ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[1]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[1]                                                                   ; regout           ;
+; |data_path|exp_r_alu:inst|inst6                                                                                      ; |data_path|exp_r_alu:inst|inst6                                                                                ; out0             ;
+; |data_path|exp_r_alu:inst|inst11                                                                                     ; |data_path|exp_r_alu:inst|inst11                                                                               ; out0             ;
+; |data_path|exp_r_alu:inst|inst24                                                                                     ; |data_path|exp_r_alu:inst|inst24                                                                               ; out0             ;
+; |data_path|exp_r_alu:inst|inst5                                                                                      ; |data_path|exp_r_alu:inst|inst5                                                                                ; out0             ;
+; |data_path|exp_r_alu:inst|74244:inst10|27                                                                            ; |data_path|exp_r_alu:inst|74244:inst10|27                                                                      ; out              ;
+; |data_path|exp_r_alu:inst|74244:inst10|31                                                                            ; |data_path|exp_r_alu:inst|74244:inst10|31                                                                      ; out              ;
+; |data_path|exp_r_alu:inst|74244:inst10|36                                                                            ; |data_path|exp_r_alu:inst|74244:inst10|36                                                                      ; out              ;
+; |data_path|exp_r_alu:inst|74181:inst2|81                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|81                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|54                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|54                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|47                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|47                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|14                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|14                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|44                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|44                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|11                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|11                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|79                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|79                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|66                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|66                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|46                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|46                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|8                                                                              ; |data_path|exp_r_alu:inst|74181:inst2|8                                                                        ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|65                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|65                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|43                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|43                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|7                                                                              ; |data_path|exp_r_alu:inst|74181:inst2|7                                                                        ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|77                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|77                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|56                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|56                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|52                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|52                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|24                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|24                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|51                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|51                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|21                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|21                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|74                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|74                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|73                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|73                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|72                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|72                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|71                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|71                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|70                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|70                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|45                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|45                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|17                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|17                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|82                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|82                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|55                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|55                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|75                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|75                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|67                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|67                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|68                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|68                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|69                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|69                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|80                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|80                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|53                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|53                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|64                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|64                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|78                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|78                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|63                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|63                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|58                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|58                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|59                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|59                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|62                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|62                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|61                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|61                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74273:inst3|19                                                                             ; |data_path|exp_r_alu:inst|74273:inst3|19                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst3|18                                                                             ; |data_path|exp_r_alu:inst|74273:inst3|18                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst3|17                                                                             ; |data_path|exp_r_alu:inst|74273:inst3|17                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst3|16                                                                             ; |data_path|exp_r_alu:inst|74273:inst3|16                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst3|15                                                                             ; |data_path|exp_r_alu:inst|74273:inst3|15                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst3|14                                                                             ; |data_path|exp_r_alu:inst|74273:inst3|14                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst3|13                                                                             ; |data_path|exp_r_alu:inst|74273:inst3|13                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74181:inst1|81                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|81                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|54                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|54                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|44                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|44                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|12                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|12                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|79                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|79                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|66                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|66                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|46                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|46                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|8                                                                              ; |data_path|exp_r_alu:inst|74181:inst1|8                                                                        ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|65                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|65                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|43                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|43                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|7                                                                              ; |data_path|exp_r_alu:inst|74181:inst1|7                                                                        ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|77                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|77                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|56                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|56                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|51                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|51                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|22                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|22                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|74                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|74                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|73                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|73                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|72                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|72                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|71                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|71                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|70                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|70                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|45                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|45                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|17                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|17                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|82                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|82                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|55                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|55                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|75                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|75                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|67                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|67                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|68                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|68                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|69                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|69                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|80                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|80                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|53                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|53                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|64                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|64                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74244:inst|26                                                                              ; |data_path|exp_r_alu:inst|74244:inst|26                                                                        ; out              ;
+; |data_path|exp_r_alu:inst|74244:inst|27                                                                              ; |data_path|exp_r_alu:inst|74244:inst|27                                                                        ; out              ;
+; |data_path|exp_r_alu:inst|74244:inst|31                                                                              ; |data_path|exp_r_alu:inst|74244:inst|31                                                                        ; out              ;
+; |data_path|exp_r_alu:inst|74244:inst|36                                                                              ; |data_path|exp_r_alu:inst|74244:inst|36                                                                        ; out              ;
+; |data_path|exp_r_alu:inst|74244:inst|1                                                                               ; |data_path|exp_r_alu:inst|74244:inst|1                                                                         ; out              ;
+; |data_path|exp_r_alu:inst|74244:inst|6                                                                               ; |data_path|exp_r_alu:inst|74244:inst|6                                                                         ; out              ;
+; |data_path|exp_r_alu:inst|74244:inst|10                                                                              ; |data_path|exp_r_alu:inst|74244:inst|10                                                                        ; out              ;
+; |data_path|exp_r_alu:inst|74244:inst|11                                                                              ; |data_path|exp_r_alu:inst|74244:inst|11                                                                        ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~0                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~0                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~1                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~1                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~2                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~2                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~3                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~3                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~4                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~4                                                                  ; out0             ;
++----------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                           ;
++------------------------------------------------+------------------------------------------------+------------------+
+; Node Name                                      ; Output Port Name                               ; Output Port Type ;
++------------------------------------------------+------------------------------------------------+------------------+
+; |data_path|d[7]                                ; |data_path|d[7]                                ; out              ;
+; |data_path|d[6]                                ; |data_path|d[6]                                ; out              ;
+; |data_path|d[5]                                ; |data_path|d[5]                                ; out              ;
+; |data_path|d[4]                                ; |data_path|d[4]                                ; out              ;
+; |data_path|d[3]                                ; |data_path|d[3]                                ; out              ;
+; |data_path|d[2]                                ; |data_path|d[2]                                ; out              ;
+; |data_path|d[1]                                ; |data_path|d[1]                                ; out              ;
+; |data_path|d[0]                                ; |data_path|d[0]                                ; out              ;
+; |data_path|k[7]                                ; |data_path|k[7]                                ; out              ;
+; |data_path|k[6]                                ; |data_path|k[6]                                ; out              ;
+; |data_path|k[5]                                ; |data_path|k[5]                                ; out              ;
+; |data_path|k[4]                                ; |data_path|k[4]                                ; out              ;
+; |data_path|k[3]                                ; |data_path|k[3]                                ; out              ;
+; |data_path|pc_sel[2]                           ; |data_path|pc_sel[2]                           ; out              ;
+; |data_path|dd[7]                               ; |data_path|dd[7]                               ; pin_out          ;
+; |data_path|dd[6]                               ; |data_path|dd[6]                               ; pin_out          ;
+; |data_path|dd[5]                               ; |data_path|dd[5]                               ; pin_out          ;
+; |data_path|dd[4]                               ; |data_path|dd[4]                               ; pin_out          ;
+; |data_path|dd[3]                               ; |data_path|dd[3]                               ; pin_out          ;
+; |data_path|dd[2]                               ; |data_path|dd[2]                               ; pin_out          ;
+; |data_path|dd[1]                               ; |data_path|dd[1]                               ; pin_out          ;
+; |data_path|dd[0]                               ; |data_path|dd[0]                               ; pin_out          ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~0    ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~0    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~1    ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~1    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~2    ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~2    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~3    ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~3    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~8    ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~8    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~9    ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~9    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~10   ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~10   ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~11   ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~11   ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[7]   ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[7]   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[6]   ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[6]   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[5]   ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[5]   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[4]   ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[4]   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[3]   ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[3]   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[3]~3  ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[3]~3  ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[4]~4  ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[4]~4  ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[5]~5  ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[5]~5  ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[6]~6  ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[6]~6  ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[7]~7  ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|d[7]~7  ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[3]   ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[3]   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[4]   ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[4]   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[5]   ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[5]   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[6]   ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[6]   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[7]   ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[7]   ; regout           ;
+; |data_path|exp_r_alu:inst|74244:inst10|26      ; |data_path|exp_r_alu:inst|74244:inst10|26      ; out              ;
+; |data_path|exp_r_alu:inst|74244:inst10|1       ; |data_path|exp_r_alu:inst|74244:inst10|1       ; out              ;
+; |data_path|exp_r_alu:inst|74244:inst10|6       ; |data_path|exp_r_alu:inst|74244:inst10|6       ; out              ;
+; |data_path|exp_r_alu:inst|74244:inst10|10      ; |data_path|exp_r_alu:inst|74244:inst10|10      ; out              ;
+; |data_path|exp_r_alu:inst|74244:inst10|11      ; |data_path|exp_r_alu:inst|74244:inst10|11      ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst9|46       ; |data_path|exp_r_alu:inst|74374:inst9|46       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst9|19       ; |data_path|exp_r_alu:inst|74374:inst9|19       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst9|44       ; |data_path|exp_r_alu:inst|74374:inst9|44       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst9|17       ; |data_path|exp_r_alu:inst|74374:inst9|17       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst9|43       ; |data_path|exp_r_alu:inst|74374:inst9|43       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst9|16       ; |data_path|exp_r_alu:inst|74374:inst9|16       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst9|42       ; |data_path|exp_r_alu:inst|74374:inst9|42       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst9|15       ; |data_path|exp_r_alu:inst|74374:inst9|15       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst9|41       ; |data_path|exp_r_alu:inst|74374:inst9|41       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst9|14       ; |data_path|exp_r_alu:inst|74374:inst9|14       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst9|40       ; |data_path|exp_r_alu:inst|74374:inst9|40       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst9|13       ; |data_path|exp_r_alu:inst|74374:inst9|13       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst8|46       ; |data_path|exp_r_alu:inst|74374:inst8|46       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst8|19       ; |data_path|exp_r_alu:inst|74374:inst8|19       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst8|45       ; |data_path|exp_r_alu:inst|74374:inst8|45       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst8|18       ; |data_path|exp_r_alu:inst|74374:inst8|18       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst8|43       ; |data_path|exp_r_alu:inst|74374:inst8|43       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst8|16       ; |data_path|exp_r_alu:inst|74374:inst8|16       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst8|42       ; |data_path|exp_r_alu:inst|74374:inst8|42       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst8|15       ; |data_path|exp_r_alu:inst|74374:inst8|15       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst8|41       ; |data_path|exp_r_alu:inst|74374:inst8|41       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst8|14       ; |data_path|exp_r_alu:inst|74374:inst8|14       ; regout           ;
+; |data_path|exp_r_alu:inst|74181:inst2|13       ; |data_path|exp_r_alu:inst|74181:inst2|13       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|12       ; |data_path|exp_r_alu:inst|74181:inst2|12       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|9        ; |data_path|exp_r_alu:inst|74181:inst2|9        ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|6        ; |data_path|exp_r_alu:inst|74181:inst2|6        ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|23       ; |data_path|exp_r_alu:inst|74181:inst2|23       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|22       ; |data_path|exp_r_alu:inst|74181:inst2|22       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|48       ; |data_path|exp_r_alu:inst|74181:inst2|48       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|19       ; |data_path|exp_r_alu:inst|74181:inst2|19       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|18       ; |data_path|exp_r_alu:inst|74181:inst2|18       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|16       ; |data_path|exp_r_alu:inst|74181:inst2|16       ; out0             ;
+; |data_path|exp_r_alu:inst|74273:inst4|19       ; |data_path|exp_r_alu:inst|74273:inst4|19       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst4|18       ; |data_path|exp_r_alu:inst|74273:inst4|18       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst4|17       ; |data_path|exp_r_alu:inst|74273:inst4|17       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst4|16       ; |data_path|exp_r_alu:inst|74273:inst4|16       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst4|15       ; |data_path|exp_r_alu:inst|74273:inst4|15       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst4|13       ; |data_path|exp_r_alu:inst|74273:inst4|13       ; regout           ;
+; |data_path|exp_r_alu:inst|74181:inst1|47       ; |data_path|exp_r_alu:inst|74181:inst1|47       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|14       ; |data_path|exp_r_alu:inst|74181:inst1|14       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|13       ; |data_path|exp_r_alu:inst|74181:inst1|13       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|11       ; |data_path|exp_r_alu:inst|74181:inst1|11       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|9        ; |data_path|exp_r_alu:inst|74181:inst1|9        ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|6        ; |data_path|exp_r_alu:inst|74181:inst1|6        ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|52       ; |data_path|exp_r_alu:inst|74181:inst1|52       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|24       ; |data_path|exp_r_alu:inst|74181:inst1|24       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|23       ; |data_path|exp_r_alu:inst|74181:inst1|23       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|21       ; |data_path|exp_r_alu:inst|74181:inst1|21       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|48       ; |data_path|exp_r_alu:inst|74181:inst1|48       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|19       ; |data_path|exp_r_alu:inst|74181:inst1|19       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|18       ; |data_path|exp_r_alu:inst|74181:inst1|18       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|16       ; |data_path|exp_r_alu:inst|74181:inst1|16       ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~5  ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~5  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~6  ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~6  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~7  ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~7  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~8  ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~8  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~9  ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~9  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~10 ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~10 ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~11 ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~11 ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~12 ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~12 ; out0             ;
++------------------------------------------------+------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                                 ;
++----------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                            ; Output Port Name                                                                                               ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; |data_path|d[7]                                                                                                      ; |data_path|d[7]                                                                                                ; out              ;
+; |data_path|d[6]                                                                                                      ; |data_path|d[6]                                                                                                ; out              ;
+; |data_path|d[5]                                                                                                      ; |data_path|d[5]                                                                                                ; out              ;
+; |data_path|d[4]                                                                                                      ; |data_path|d[4]                                                                                                ; out              ;
+; |data_path|d[3]                                                                                                      ; |data_path|d[3]                                                                                                ; out              ;
+; |data_path|d[2]                                                                                                      ; |data_path|d[2]                                                                                                ; out              ;
+; |data_path|d[1]                                                                                                      ; |data_path|d[1]                                                                                                ; out              ;
+; |data_path|d[0]                                                                                                      ; |data_path|d[0]                                                                                                ; out              ;
+; |data_path|k[7]                                                                                                      ; |data_path|k[7]                                                                                                ; out              ;
+; |data_path|k[6]                                                                                                      ; |data_path|k[6]                                                                                                ; out              ;
+; |data_path|k[5]                                                                                                      ; |data_path|k[5]                                                                                                ; out              ;
+; |data_path|k[4]                                                                                                      ; |data_path|k[4]                                                                                                ; out              ;
+; |data_path|k[3]                                                                                                      ; |data_path|k[3]                                                                                                ; out              ;
+; |data_path|dd[7]                                                                                                     ; |data_path|dd[7]                                                                                               ; pin_out          ;
+; |data_path|dd[6]                                                                                                     ; |data_path|dd[6]                                                                                               ; pin_out          ;
+; |data_path|dd[5]                                                                                                     ; |data_path|dd[5]                                                                                               ; pin_out          ;
+; |data_path|dd[4]                                                                                                     ; |data_path|dd[4]                                                                                               ; pin_out          ;
+; |data_path|dd[3]                                                                                                     ; |data_path|dd[3]                                                                                               ; pin_out          ;
+; |data_path|dd[2]                                                                                                     ; |data_path|dd[2]                                                                                               ; pin_out          ;
+; |data_path|dd[1]                                                                                                     ; |data_path|dd[1]                                                                                               ; pin_out          ;
+; |data_path|dd[0]                                                                                                     ; |data_path|dd[0]                                                                                               ; pin_out          ;
+; |data_path|r1[3]                                                                                                     ; |data_path|r1[3]                                                                                               ; pin_out          ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a1 ; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[1] ; portadataout0    ;
+; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|ram_block1a3 ; |data_path|pc_ram:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_vs91:auto_generated|q_a[3] ; portadataout0    ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~0                                                                          ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~0                                                                    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~1                                                                          ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~1                                                                    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~2                                                                          ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~2                                                                    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~3                                                                          ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~3                                                                    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~8                                                                          ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~8                                                                    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~9                                                                          ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~9                                                                    ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~10                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~10                                                                   ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~11                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc~11                                                                   ; out              ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[0]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[0]                                                                   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[7]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[7]                                                                   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[6]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[6]                                                                   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[5]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[5]                                                                   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[4]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[4]                                                                   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[3]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|pc[3]                                                                   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[2]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[2]                                                                   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[3]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[3]                                                                   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[4]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[4]                                                                   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[5]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[5]                                                                   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[6]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[6]                                                                   ; regout           ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[7]                                                                         ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|ar[7]                                                                   ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst9|47                                                                             ; |data_path|exp_r_alu:inst|74374:inst9|47                                                                       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst9|20                                                                             ; |data_path|exp_r_alu:inst|74374:inst9|20                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst9|19                                                                             ; |data_path|exp_r_alu:inst|74374:inst9|19                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst9|45                                                                             ; |data_path|exp_r_alu:inst|74374:inst9|45                                                                       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst9|18                                                                             ; |data_path|exp_r_alu:inst|74374:inst9|18                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst9|17                                                                             ; |data_path|exp_r_alu:inst|74374:inst9|17                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst9|16                                                                             ; |data_path|exp_r_alu:inst|74374:inst9|16                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst9|15                                                                             ; |data_path|exp_r_alu:inst|74374:inst9|15                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst9|14                                                                             ; |data_path|exp_r_alu:inst|74374:inst9|14                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst9|13                                                                             ; |data_path|exp_r_alu:inst|74374:inst9|13                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst8|47                                                                             ; |data_path|exp_r_alu:inst|74374:inst8|47                                                                       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst8|20                                                                             ; |data_path|exp_r_alu:inst|74374:inst8|20                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst8|19                                                                             ; |data_path|exp_r_alu:inst|74374:inst8|19                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst8|18                                                                             ; |data_path|exp_r_alu:inst|74374:inst8|18                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst8|44                                                                             ; |data_path|exp_r_alu:inst|74374:inst8|44                                                                       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst8|17                                                                             ; |data_path|exp_r_alu:inst|74374:inst8|17                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst8|16                                                                             ; |data_path|exp_r_alu:inst|74374:inst8|16                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst8|15                                                                             ; |data_path|exp_r_alu:inst|74374:inst8|15                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst8|14                                                                             ; |data_path|exp_r_alu:inst|74374:inst8|14                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74374:inst8|40                                                                             ; |data_path|exp_r_alu:inst|74374:inst8|40                                                                       ; out              ;
+; |data_path|exp_r_alu:inst|74374:inst8|13                                                                             ; |data_path|exp_r_alu:inst|74374:inst8|13                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74181:inst2|13                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|13                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|12                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|12                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|9                                                                              ; |data_path|exp_r_alu:inst|74181:inst2|9                                                                        ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|6                                                                              ; |data_path|exp_r_alu:inst|74181:inst2|6                                                                        ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|23                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|23                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|22                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|22                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|48                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|48                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|19                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|19                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|18                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|18                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst2|16                                                                             ; |data_path|exp_r_alu:inst|74181:inst2|16                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74273:inst3|12                                                                             ; |data_path|exp_r_alu:inst|74273:inst3|12                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst4|19                                                                             ; |data_path|exp_r_alu:inst|74273:inst4|19                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst4|18                                                                             ; |data_path|exp_r_alu:inst|74273:inst4|18                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst4|17                                                                             ; |data_path|exp_r_alu:inst|74273:inst4|17                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst4|16                                                                             ; |data_path|exp_r_alu:inst|74273:inst4|16                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst4|15                                                                             ; |data_path|exp_r_alu:inst|74273:inst4|15                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst4|14                                                                             ; |data_path|exp_r_alu:inst|74273:inst4|14                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst4|13                                                                             ; |data_path|exp_r_alu:inst|74273:inst4|13                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74273:inst4|12                                                                             ; |data_path|exp_r_alu:inst|74273:inst4|12                                                                       ; regout           ;
+; |data_path|exp_r_alu:inst|74181:inst1|47                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|47                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|14                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|14                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|13                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|13                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|11                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|11                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|9                                                                              ; |data_path|exp_r_alu:inst|74181:inst1|9                                                                        ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|6                                                                              ; |data_path|exp_r_alu:inst|74181:inst1|6                                                                        ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|52                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|52                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|24                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|24                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|23                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|23                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|21                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|21                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|48                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|48                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|19                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|19                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|18                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|18                                                                       ; out0             ;
+; |data_path|exp_r_alu:inst|74181:inst1|16                                                                             ; |data_path|exp_r_alu:inst|74181:inst1|16                                                                       ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~5                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~5                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~6                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~6                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~7                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~7                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~8                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~8                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~9                                                                        ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~9                                                                  ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~10                                                                       ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~10                                                                 ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~11                                                                       ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~11                                                                 ; out0             ;
+; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~12                                                                       ; |data_path|pc_ram:inst2|sw_pc_ar:inst1|Add0~12                                                                 ; out0             ;
++----------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Mar 17 21:30:29 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off data_path -c data_path
+Info: Using vector source file "D:/My-Quartus/Model Machine/data_path_2/data_path.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "Copy_1_of_d[7]~result" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Copy_1_of_d[6]~result" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Copy_1_of_d[5]~result" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Copy_1_of_d[4]~result" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Copy_1_of_d[3]~result" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Copy_1_of_d[2]~result" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Copy_1_of_d[1]~result" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "Copy_1_of_d[0]~result" in design.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      60.25 %
+Info: Number of transitions in simulation is 1463
+Info: Quartus II Simulator was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 163 megabytes
+    Info: Processing ended: Sun Mar 17 21:30:29 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

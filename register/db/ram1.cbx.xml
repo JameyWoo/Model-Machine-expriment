@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ram1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|ram1|LPM_RAM_IO:inst1|altram:sram|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_4h91.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

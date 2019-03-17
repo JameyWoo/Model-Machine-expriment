@@ -50,7 +50,13 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE data_path.vwf
+set_global_assignment -name VECTOR_COMPARE_TRIGGER_MODE INPUT_EDGE
+set_global_assignment -name MIF_FILE exp_ram.mif
+set_global_assignment -name VECTOR_WAVEFORM_FILE data_path.vwf
+set_global_assignment -name VHDL_FILE exp_sw_pc_ar.vhd
 set_global_assignment -name BDF_FILE exp_ram.bdf
-set_global_assignment -name VHDL_FILE sw_pc_ar.vhd
 set_global_assignment -name BDF_FILE exp_r_alu.bdf
 set_global_assignment -name BDF_FILE pc_ram.bdf
+set_global_assignment -name BDF_FILE data_path.bdf
